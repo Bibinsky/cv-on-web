@@ -13,6 +13,7 @@ body {
 
 aside {
     display: flex;
+    justify-content: center;
     width: 30%;
     background-color: #FFB300;
     color: black;
@@ -38,6 +39,7 @@ h1 {
 .element h2 {
     background-color: black;
     color: #FFB300;
+    flex-grow: 1;
 }
 
 h2 {
@@ -48,7 +50,7 @@ h3 {
     font-size: 16px;
 }
 
-article {
+article /* partie personnelle*/{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -64,11 +66,11 @@ strong {
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 div {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 hr {
@@ -94,12 +96,8 @@ article i
 color:#FFB300;
 }
 
-.e3
-
-{
-
-		flex-grow: 1;
-
+element .e3{
+	justify-content: center;
 }
 
 article/*partie cursus*/
@@ -107,7 +105,8 @@ article/*partie cursus*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	width: 70%; 
+	width: 65%; 
+	margin: 5%;
 	text-align: left;
 }
 
@@ -117,6 +116,13 @@ span{
     margin: 30px;
     align-items: center;
 
+}
+#conteneur experience {
+	display: inline-flex;
+	
+}
+#conteneur formation {
+	display: inline-flex;
 }
 .date{
     justify-content: flex-start;
@@ -130,4 +136,14 @@ span{
 }
 .references{
 	justify-content: flex-start;
+}
+.emploi p{
+	flex-wrap: wrap;
+}
+.identity{
+	justify-content: flex-end;
+}
+@media screen and (max-width: 1280px)
+{
+    /* Rédigez vos propriétés CSS ici */
 }
