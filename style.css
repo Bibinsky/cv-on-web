@@ -3,25 +3,30 @@
 
 
 * {
-    font-family: calibri;
+    font-family: "calibri",sans-serif;
 }
 
 body {
     display: flex;
     margin: 0px;
+    max-width: 1000px;
 }
 
-aside {
+aside /*partie personnelle*/{
     display: flex;
     justify-content: center;
     width: 30%;
     background-color: #FFB300;
     color: black;
+    margin: 0px;
 }
-
-img {
+.figure{
+position: absolute;
+align-self: center;
+}
+.img {
     border-radius: 50%;
-    align-self: center;
+
 }
 
 #conteneur {
@@ -47,10 +52,10 @@ h2 {
 }
 
 h3 {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
-article /* partie personnelle*/{
+article /* partie cursus*/{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -59,18 +64,20 @@ article /* partie personnelle*/{
     text-align: left;
     padding-left: 20px;
 }
-
+.header
 strong {
     color: #FFB300;
     font-weight: bold;
 }
-
-p {
-    font-size: 16px;
+h1{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.2rem;
 }
 
 div {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 hr {
@@ -86,7 +93,7 @@ hr {
     border-radius: 50%;
     box-sizing: border-box;
     text-align: center;
-    font-size: 30px;
+    font-size: 2rem;
     height: 50px;
     width: 50px;
     padding-top: 7px;
@@ -100,50 +107,29 @@ element .e3{
 	justify-content: center;
 }
 
-article/*partie cursus*/
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 65%; 
-	margin: 5%;
-	text-align: left;
-}
 
-span{
-    display: inline-flex;
+article{
+    display: flex;
+
     justify-content: space-evenly;
     margin: 30px;
     align-items: center;
 
+*article>iv{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
 }
-#conteneur experience {
-	display: inline-flex;
-	
+h3{
+    font-size: 1.3rem;
 }
-#conteneur formation {
-	display: inline-flex;
+h4{
+    font-size: 1.2rem;
 }
-.date{
-    justify-content: flex-start;
-    grid-row-gap: 
-}
-.emploi{
-    justify-content: flex-end;
-}
-.formation{
-    justify-content: flex-end;
-}
-.references{
-	justify-content: flex-start;
-}
-.emploi p{
-	flex-wrap: wrap;
-}
-.identity{
-	justify-content: flex-end;
-}
-@media screen and (max-width: 1280px)
-{
-    /* Rédigez vos propriétés CSS ici */
+*article>div:first-child {
+display: flex;
+flex-direction: column;
+padding: 1rem 3rem 1rem 1rem;
+width: 70%
 }
